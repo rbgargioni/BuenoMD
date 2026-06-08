@@ -135,3 +135,82 @@ if (contactForm) {
 }
 
 });
+
+// Botão Flutuante
+
+
+let unidadeSelecionada = '';
+
+document
+.getElementById('btnContatoFlutuante')
+.addEventListener('click', function(){
+
+    document
+    .getElementById('modalContato')
+    .style.display = 'flex';
+
+    document
+    .getElementById('etapa1')
+    .style.display = 'block';
+
+    document
+    .getElementById('etapa2')
+    .style.display = 'none';
+});
+
+function selecionarUnidade(unidade){
+
+    unidadeSelecionada = unidade;
+
+    document
+    .getElementById('etapa1')
+    .style.display = 'none';
+
+    document
+    .getElementById('etapa2')
+    .style.display = 'block';
+}
+
+function abrirWhatsapp(){
+
+    let numero = '';
+
+    if(unidadeSelecionada === 'brusque'){
+        numero = '5547999999999';
+    }
+
+    if(unidadeSelecionada === 'itajai'){
+        numero = '5547999999998';
+    }
+
+    window.open(
+        'https://wa.me/' + numero,
+        '_blank'
+    );
+}
+
+function abrirEmail(){
+
+    document
+    .getElementById('modalContato')
+    .style.display = 'none';
+
+    document
+    .getElementById('contato')
+    .scrollIntoView({
+        behavior:'smooth'
+    });
+}
+
+window.addEventListener('click', function(event){
+
+    const modal =
+    document.getElementById('modalContato');
+
+    if(event.target === modal){
+
+        modal.style.display = 'none';
+    }
+});
+
+

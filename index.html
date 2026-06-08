@@ -391,5 +391,57 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+
+ 
+<!-- BOTÃO FLUTUANTE -->
+<button id="btnContatoFlutuante">
+    Contato
+</button>
+
+<!-- MODAL -->
+<div id="modalContato" class="modal-contato">
+
+    <div class="modal-content">
+
+        <!-- ETAPA 1 -->
+        <div id="etapa1">
+
+            <h3>Selecione a unidade</h3>
+
+            <button class="btn-unidade"
+                    onclick="selecionarUnidade('brusque')">
+                <img src="img/brusque.png" width="32">
+                Brusque
+            </button>
+
+            <button class="btn-unidade"
+                    onclick="selecionarUnidade('itajai')">
+                <img src="img/itajai.png" width="32">
+                Itajaí
+            </button>
+
+        </div>
+
+        <!-- ETAPA 2 -->
+        <div id="etapa2" style="display:none;">
+
+            <h3>Como deseja entrar em contato?</h3>
+
+            <button class="btn-unidade"
+                    onclick="abrirWhatsapp()">
+                📱 WhatsApp
+            </button>
+
+            <button class="btn-unidade"
+                    onclick="abrirEmail()">
+                ✉️ E-mail
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+   
 </body>
 </html>
