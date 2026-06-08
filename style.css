@@ -181,10 +181,10 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
 
 /* Tablets (até 992px) */
 @media (max-width: 992px) {
-    .hero { 
+  /*  .hero { 
         flex-direction: column; text-align: center; justify-content: center; 
         gap: 50px; height: auto; padding: 120px 5%; 
-    }
+    }*/
     .hero-content h1 { font-size: 60px; }
     .chart-container { width: 100%; max-width: 450px; }
     
@@ -201,7 +201,7 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     .hero-content h1 { font-size: 45px; }
     .hero-logo img { max-width: 250px; }
 
-    .white-section { padding: 80px 8%; }
+   /* .white-section { padding: 80px 8%; }*/
     .section-header h2 { font-size: 2rem; }
     .form-row { grid-template-columns: 1fr; } 
     
@@ -220,7 +220,7 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     #hero { padding: 100px 5%; }
     .light-section { padding: 50px 5%; }
     #areas { padding: 80px 8%; } 
-    #sobre { padding: 60px 5%; } 
+   /* #sobre { padding: 60px 5%; } */
     #cases { padding: 80px 5%; } 
     .main-footer { padding: 50px 5%;}
     #contato { padding: 80px 5%; }
@@ -309,3 +309,146 @@ nav a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; 
     gap:10px;
 }
 
+/* MODAL SUCESSO */
+.modal-sucesso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 100003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounceIn 0.5s ease;
+}
+
+.modal-sucesso-conteudo {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(40, 167, 69, 0.4);
+    border: 5px solid #28a745;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-sucesso-emoji {
+    font-size: 4.5em;
+    margin-bottom: 15px;
+}
+
+.modal-sucesso-texto {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 10px;
+}
+
+.modal-sucesso-subtexto {
+    font-size: 1.5em;
+    color: #155724;
+    line-height: 1.4;
+}
+/* ==========================================
+    ESTILIZAÇÃO PREMIUM DA MODAL DE CONTATO
+   ========================================== */
+.modal-contato {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content-premium {
+    background: linear-gradient(135deg, #ffffff, #f3f4f6);
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 3px solid #3a833c; /* Verde institucional BuenoMD */
+    max-width: 400px;
+    width: 90%;
+    animation: modalBounceIn 0.4s ease;
+}
+
+.modal-premium-emoji {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.modal-premium-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.modal-premium-subtexto {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn-premium-unidade {
+    width: 100%;
+    margin-top: 12px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.btn-premium-unidade:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    border-color: #3a833c;
+}
+
+/* Cores específicas para a Etapa 2 */
+.btn-whatsapp-color {
+    background: #25d366;
+    color: white;
+    border: none;
+}
+.btn-whatsapp-color:hover {
+    background: #20ba56;
+    border-color: transparent;
+    color: white;
+}
+
+.btn-email-color {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+}
+.btn-email-color:hover {
+    background: #333333;
+    border-color: transparent;
+    color: white;
+}
+
+@keyframes modalBounceIn {
+    0% { transform: scale(0.85); opacity: 0; }
+    70% { transform: scale(1.02); opacity: 1; }
+    100% { transform: scale(1); }
+}

@@ -290,63 +290,41 @@
 </section>
 -->
 
-    <section id="contato" class="dark-section">
-    <div class="contact-header">
-        <h2>Vamos conversar?</h2>
-        <p>Envie seu desafio ou estratégia para que possamos propor a solução adequada.</p>
-    </div>
-    
-   <form class="contact-form" id="my-form">
-    <div class="form-row">
-        <div class="form-group">
-            <label>Nome *</label>
-            <input type="text" name="nome" placeholder="Seu nome completo" required>
-        </div>
-        <div class="form-group">
-            <label>Telefone *</label>
-            <input 
-                type="text" 
-                name="telefone" 
-                id="telefone" 
-                placeholder="(00) 00000-0000" 
-                maxlength="15" 
-                required
-            >
-        </div>
-    </div>
-    <div class="form-group">
-        <label>E-mail *</label>
-        <input 
-            type="email" 
-            name="email" 
-            id="email"
-            placeholder="seu@email.com" 
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            title="Por favor, digite um e-mail válido (ex: nome@dominio.com)"
-            required
-        >
-    </div>
-    <div class="form-group">
-        <label>Mensagem *</label>
-        <textarea 
-            name="mensagem" 
-            id="mensagem"
-            placeholder="Conte sobre seu projeto ou desafio..." 
-            rows="4" 
-            maxlength="8000" 
-            required></textarea>
-        <small id="char-count" style="color: #666; font-size: 0.75rem;">Restam 8000 caracteres</small>
-    </div>
+   <div id="modalContato" class="modal-contato">
+    <div class="modal-content-premium">
+        
+        <div id="etapa1">
+            <div class="modal-premium-emoji">🏥</div>
+            <h3 class="modal-premium-titulo">Selecione a unidade</h3>
+            <p class="modal-premium-subtexto">Onde você deseja receber atendimento?</p>
 
-    <input type="hidden" name="_subject" value="Novo contato: Site Área 51">
-    
-    <button type="submit" id="submit-button">
-        <i data-lucide="send"></i> Enviar mensagem
-    </button>
-    
-    <p id="status-message" style="margin-top: 15px; font-weight: 600; display: none;"></p>
-</form>
-</section>
+            <button class="btn-premium-unidade" onclick="selecionarUnidade('brusque')">
+                <img src="img/brusque.png" width="24" onerror="this.style.display='none'">
+                <span>Brusque / SC</span>
+            </button>
+
+            <button class="btn-premium-unidade" onclick="selecionarUnidade('itajai')">
+                <img src="img/itajai.png" width="24" onerror="this.style.display='none'">
+                <span>Itajaí / SC</span>
+            </button>
+        </div>
+
+        <div id="etapa2" style="display:none;">
+            <div class="modal-premium-emoji">💬</div>
+            <h3 class="modal-premium-titulo">Como deseja conversar?</h3>
+            <p class="modal-premium-subtexto">Escolha o canal de sua preferência:</p>
+
+            <button class="btn-premium-unidade btn-whatsapp-color" onclick="abrirWhatsapp()">
+                📱 Conversar via WhatsApp
+            </button>
+
+            <button class="btn-premium-unidade btn-email-color" onclick="abrirEmail()">
+                ✉️ Enviar um E-mail
+            </button>
+        </div>
+
+    </div>
+</div>
 
 <footer class="main-footer">
     <div class="footer-container">
