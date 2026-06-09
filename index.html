@@ -3,295 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuenoMD</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Dr. Mateus Bueno Bueno | Cirurgião Cardiovascular</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+
     <header>
         <nav>
-           <!-- <div class="logo">
-                <img src="IMG/BuenoMD Preto.svg" alt="BuenoMD Logo">
-            </div>-->
-            <ul>
-                <li><a href="#areas">Sobre</a></li>
-                <li><a href="#sobre">Quem Somos</a></li>
-                <li><a href="#Entrevistas">Entrevistas</a></li>
-                <li><a href="#contato" class="btn-contato">Contato</a></li>
+            <div class="logo">
+                <span class="brand-main">Bueno<span class="brand-sub">MD</span></span>
+                <span class="brand-desc">Cirurgia Cardiovascular</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Trajetória</a></li>
+                <li><a href="#areas">Pilares</a></li>
+                <li><a href="#entrevistas">Mídia</a></li>
+                <li><a href="#contato" class="btn-nav-contato">Agendar Consulta</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
         </nav>
     </header>
 
-   <section id="home" class="hero">
-        <img src="IMG/Mateus_menor.png" alt="Médico Mateus" class="hero-fundo">
-   </section>
-
-    <section id="areas" class="light-section">
-        <div class="section-header">
-            <h2>Dr. Mateus Bueno Bueno</h2>
-            <p id="texto_area">Quatro pilares que sustentam nossa missão de transformar realidades</p>
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <span class="hero-tag">BUENOMD • CIRURGIA CARDIOVASCULAR</span>
+            <h1 class="hero-title">Dr. Mateus Bueno Bueno</h1>
+            <p class="hero-subtitle">Cuidado humanizado e excelência técnica em cirurgia cardíaca. Membro especialista SBCCV com habilitação em TAVI.</p>
+            <div class="hero-meta">
+                <span><strong>CRM/SC</strong> 17737</span>
+                <span class="meta-divider">|</span>
+                <span><strong>RQE</strong> 17251</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#sobre" class="btn-primary">Conhecer o Trabalho <i data-lucide="arrow-right"></i></a>
+            </div>
         </div>
-        <div class="grid-cards">
-            <div class="card">
-                <div class="card-icon icon-yellow">
-                    <i data-lucide="stethoscope"></i>
-                </div>
-                <h3 class="underline-title">Excelência Técnica</h3>
-                <p>Atuação baseada em conhecimento científico atualizado, experiência cirúrgica e utilização de técnicas modernas para oferecer treatments seguros e eficazes aos pacientes.</p>
-            </div>
-            
-            <div class="card">
-                <div class="card-icon icon-blue">
-                    <i data-lucide="heart-handshake"></i>
-                </div>
-                <h3 class="underline-title">Atendimento Humanizado</h3>
-                <p>Cada paciente é único. O cuidado é realizado com empatia, respeito e atenção às necessidades individuais, proporcionando confiança e acolhimento em todas as etapas do tratamento.</p>
-            </div>
-            
-            <div class="card">
-                <div class="card-icon icon-orange">
-                    <i data-lucide="heart-pulse"></i>
-                </div>
-                <h3 class="underline-title">Inovação e Tecnologia</h3>
-                <p>Emprego de recursos tecnológicos avançados e procedimentos de última geração para diagnósticos precisos, cirurgias mais seguras e melhores resultados clínicos.</p>
-            </div>
-            
-            <div class="card">
-                <div class="card-icon icon-green">
-                    <i data-lucide="shield-check"></i>
-                </div>
-                <h3 class="underline-title">Segurança e Qualidade</h3>
-                <p>Compromisso permanente com protocolos rigorosos de segurança, qualidade assistencial e acompanhamento contínuo para garantir o bem-estar e a recuperação dos pacientes.</p>
+        <div class="hero-gradient-back"></div>
+    </section>
+
+    <section id="sobre" class="section-dark section-border">
+        <div class="container-narrow">
+            <div class="section-badge">Sobre</div>
+            <h2 class="serif-title">Medicina com técnica e cuidado humano.</h2>
+            <div class="about-grid">
+                <p class="about-lead">
+                    O Dr. Mateus Bueno Bueno é cirurgião cardiovascular dedicado ao tratamento cirúrgico das doenças do coração e dos grandes vasos, atendendo pacientes adultos em Santa Catarina.
+                </p>
+                <p class="about-text">
+                    Atua com foco na excelência técnica, unindo tecnologia de ponta a uma abordagem genuinamente humana em cada etapa do tratamento para garantir máxima segurança e recuperação de seus pacientes.
+                </p>
             </div>
         </div>
     </section>
 
-    <div class="sobre-grid-container">
-
-        <section id="sobre" class="white-section">
-            <div class="about-container">
-                <div class="culture-card">
-                    <div class="culture-header">
-                        <span class="green-indicator"></span>
-                        <h3>Sobre o Dr. Mateus Bueno Bueno</h3>
-                    </div>
-                    <p>
-                        Médico especialista em Cirurgia Cardiovascular, com sólida formação acadêmica e ampla experiência no tratamento das doenças cardiovasculares. Atua com foco na excelência técnica, atendimento humanizado e utilização de tecnologias modernas para proporcionar mais segurança e qualidade aos seus pacientes.
-                    </p>
-                </div>
+    <section id="formacao" class="section-dark">
+        <div class="container">
+            <div class="section-center-header">
+                <span class="section-badge">Currículo</span>
+                <h2 class="serif-title">Uma trajetória dedicada ao coração</h2>
             </div>
-        </section>
-
-        <section class="white-section">
-            <div class="about-container">
-                <div class="culture-card">
-                    <div class="culture-header">
-                        <span class="green-indicator"></span>
-                        <h3>Medicina (2006 - 2011)</h3>
+            
+            <div class="timeline-vertical">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-node">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2011</span>
+                        <h3>Graduação em Medicina</h3>
+                        <p class="institution">UFSC - Universidade Federal de Santa Catarina</p>
+                        <p>Formação médica com sólida base científica e preparação focada na excelência clínica.</p>
                     </div>
-                    <p>
-                        <strong>UFSC - Universidade Federal de Santa Catarina</strong><br><br>
-                        Formação médica com sólida base científica e preparação para atuação clínica e cirúrgica.
-                    </p>
                 </div>
-            </div>
-        </section>
 
-        <section class="white-section">
-            <div class="about-container">
-                <div class="culture-card">
-                    <div class="culture-header">
-                        <span class="green-indicator"></span>
-                        <h3>Cirurgia Geral (2013 - 2015)</h3>
+                <div class="timeline-node">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2015</span>
+                        <h3>Residência em Cirurgia Geral</h3>
+                        <p class="institution">HRHDS - Hospital Regional Hans Dieter Schmidt</p>
+                        <p>Residência médica de base cirúrgica avançada realizada em Joinville/SC.</p>
                     </div>
-                    <p>
-                        <strong>HRHDS - Hospital Regional Hans Dieter Schmidt</strong><br><br>
-                        Residência médica em Cirurgia Geral realizada em Joinville/SC.
-                    </p>
                 </div>
-            </div>
-        </section>
 
-        <section class="white-section">
-            <div class="about-container">
-                <div class="culture-card">
-                    <div class="culture-header">
-                        <span class="green-indicator"></span>
-                        <h3>Cirurgia Cardiovascular (2015 - 2019)</h3>
+                <div class="timeline-node">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h3>Cirurgia Cardiovascular</h3>
+                        <p class="institution">ICFUC - Instituto de Cardiologia do Rio Grande do Sul</p>
+                        <p>Especialização de alta complexidade realizada em um dos maiores centros de referência do país em Porto Alegre/RS.</p>
                     </div>
-                    <p>
-                        <strong>ICFUC - Instituto de Cardiologia do Rio Grande do Sul</strong><br><br>
-                        Especialização em Cirurgia Cardiovascular realizada em Porto Alegre/RS.
-                    </p>
                 </div>
-            </div>
-        </section>
 
-        <section class="white-section">
-            <div class="about-container">
-                <div class="culture-card">
-                    <div class="culture-header">
-                        <span class="green-indicator"></span>
+                <div class="timeline-node">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Desde 2020</span>
                         <h3>Angiorradiologia e Cirurgia Endovascular</h3>
+                        <p class="institution">Formação Especializada pela Angiolog</p>
+                        <p>Habilitação em procedimentos endovasculares modernos e minimamente invasivos.</p>
                     </div>
-                    <p>
-                        Formação em Angiorradiologia e Cirurgia Endovascular pela Angiolog desde 2020.
-                    </p>
                 </div>
-            </div>
-        </section>
 
-        <section class="white-section">
-            <div class="about-container">
-                <div class="culture-card">
-                    <div class="culture-header">
-                        <span class="green-indicator"></span>
-                        <h3>Títulos e Habilitações</h3>
+                <div class="timeline-node">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">Especialista</span>
+                        <h3>Títulos e Habilitações Oficiais</h3>
+                        <p class="institution">SBCCV | AMB | SBHCI</p>
+                        <p>Membro especialista da Sociedade Brasileira de Cirurgia Cardiovascular. Habilitação oficial em TAVI (Implante Transcateter de Valva Aórtica) obtida em setembro de 2023.</p>
                     </div>
-                    <p>
-                        Membro especialista da Sociedade Brasileira de Cirurgia Cardiovascular (SBCCV) e da Associação Médica Brasileira (AMB).
-                    </p>
-                    <p>
-                        Habilitação em TAVI pela SBCCV e SBHCI desde setembro de 2023.
-                    </p>
-                    <p>
-                        <strong>CRM/SC:</strong> 17737<br>
-                        <strong>RQE:</strong> 17251
-                    </p>
-                </div>
-            </div>
-        </section>
-
-    </div> <section id="Entrevistas" class="light-section">
-        <div class="section-header">
-            <h2>Entrevistas e Aparições Públicas</h2>
-            <p>
-                Participações em entrevistas, programs e eventos voltados à divulgação
-                de informações sobre saúde cardiovascular, prevenção e inovação médica.
-            </p>
-        </div>
-
-        <div class="grid-cases">
-            <div class="case-card border-green">
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/AaYf7KJ0IpE"
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="case-info">
-                    <h3>Entrevista sobre Saúde Cardiovascular</h3>
-                    <p>
-                        Participação em programa de comunicação compartilhando orientações
-                        e informações sobre prevenção, diagnóstico e tratamento das doenças do coração.
-                    </p>
-                </div>
-            </div>
-
-            <div class="case-card border-blue">
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/6pZy991oxbU"
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="case-info">
-                    <h3>Inovação e Cuidados em Cirurgia Cardiovascular</h3>
-                    <p>
-                        Entrevista abordando avanços tecnológicos, procedimentos modernos
-                        e a importância do acompanhamento especializado em cardiologia.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contato" class="main-footer">
-        <div class="footer-container">
-            
-            <div class="footer-branch">
-                <div class="footer-column footer-info">
-                    <p><strong>Brusque - SC</strong></p>
-                    <br>
-                    <p>Av. Otto Renaux, 445 - São Luiz, Brusque - SC, 88351-301</p>
-                </div>
-                <div class="footer-column footer-map">
-                  <iframe
-                      src="https://maps.google.com/maps?q=Av.%20Otto%20Renaux,%20445%20Brusque&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                      width="100%"
-                      height="250"
-                      style="border:0;"
-                      allowfullscreen=""
-                      loading="lazy">
-                  </iframe>
-                </div>
+    <section id="areas" class="section-dark section-border">
+        <div class="container">
+            <div class="section-center-header">
+                <span class="section-badge">Diferenciais</span>
+                <h2 class="serif-title">Pilares da Prática Médica</h2>
             </div>
             
-            <div class="footer-branch">
-                <div class="footer-column footer-info">
-                    <p><strong>Itajaí - SC</strong></p>
-                    <br>
-                    <p>Av. Cel. Marcos Konder, 1207 - sala 112 - Centro, Itajaí - SC, 88301-401</p>
+            <div class="grid-premium-cards">
+                <div class="premium-card">
+                    <div class="p-card-icon icon-cyan"><i data-lucide="stethoscope"></i></div>
+                    <h3>Excelência Técnica</h3>
+                    <p>Atuação baseada nas últimas evidências científicas globais, aliando refinamento tático e cirúrgico.</p>
                 </div>
-                <div class="footer-column footer-map">
-                    <iframe
-                      src="https://maps.google.com/maps?q=Av.%20Cel.%20Marcos%20Konder,%201207%20Itajai&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                      width="100%"
-                      height="250"
-                      style="border:0;"
-                      allowfullscreen=""
-                      loading="lazy">
-                    </iframe>
+                <div class="premium-card">
+                    <div class="p-card-icon icon-emerald"><i data-lucide="heart-handshake"></i></div>
+                    <h3>Cuidado Humanizado</h3>
+                    <p>Atendimento focado na empatia, personalização e acolhimento em todas as fases do tratamento do paciente.</p>
+                </div>
+                <div class="premium-card">
+                    <div class="p-card-icon icon-cyan"><i data-lucide="heart-pulse"></i></div>
+                    <h3>Inovação Tecnológica</h3>
+                    <p>Uso de técnicas minimamente invasivas que proporcionam menor tempo de recuperação e segurança preditiva.</p>
+                </div>
+                <div class="premium-card">
+                    <div class="p-card-icon icon-emerald"><i data-lucide="shield-check"></i></div>
+                    <h3>Segurança Assistencial</h3>
+                    <p>Adoção de protocolos institucionais rigorosos visando mitigação de riscos e alta performance clínica.</p>
                 </div>
             </div>
-
         </div>
-        <br>
-        <p class="copyright">2026 BuenoMD © Todos os direitos reservados</p>
-    </footer>
+    </section>
 
-    <div id="modalContato" class="modal-contato">
-        <div class="modal-content-premium">
-            
-            <div id="etapa1">
-                <div class="modal-premium-emoji">🏥</div>
-                <h3 class="modal-premium-titulo">Selecione a unidade</h3>
-                <p class="modal-premium-subtexto">Onde você deseja receber atendimento?</p>
-
-                <button class="btn-premium-unidade" onclick="selecionarUnidade('brusque')">
-                    <img src="img/brusque.png" width="24" onerror="this.style.display='none'">
-                    <span>Brusque / SC</span>
-                </button>
-
-                <button class="btn-premium-unidade" onclick="selecionarUnidade('itajai')">
-                    <img src="img/itajai.png" width="24" onerror="this.style.display='none'">
-                    <span>Itajaí / SC</span>
-                </button>
+    <section id="entrevistas" class="section-dark">
+        <div class="container">
+            <div class="section-center-header">
+                <span class="section-badge">Comunicação</span>
+                <h2 class="serif-title">Presença e Referência na Imprensa</h2>
+                <p class="section-subtitle">Disseminação de conhecimento médico, prevenção e novidades da saúde cardiovascular.</p>
             </div>
 
-            <div id="etapa2" style="display:none;">
-                <div class="modal-premium-emoji">💬</div>
-                <h3 class="modal-premium-titulo">Como deseja conversar?</h3>
-                <p class="modal-premium-subtexto">Escolha o canal de sua preferência:</p>
+            <div class="grid-media">
+                <div class="media-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/AaYf7KJ0IpE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-body">
+                        <h4>Entrevista sobre Saúde Cardiovascular</h4>
+                        <p>Discussão detalhada sobre métodos preventivos de infarto e controle de fatores de risco do coração.</p>
+                    </div>
+                </div>
 
-                <button class="btn-premium-unidade btn-whatsapp-color" onclick="abrirWhatsapp()">
-                    📱 Conversar via WhatsApp
-                </button>
-
-                <button class="btn-premium-unidade btn-email-color" onclick="abrirEmail()">
-                    ✉️ Enviar um E-mail
-                </button>
+                <div class="media-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/6pZy991oxbU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-body">
+                        <h4>Avanços em Cirurgia Cardíaca</h4>
+                        <p>Explicação didática sobre as novas abordagens de intervenções minimamente invasivas e tecnologia TAVI.</p>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </section>
+
+    <section id="contato" class="section-dark contact-section">
+        <div class="container-narrow">
+            <div class="contact-card-box" id="contact-box-anchor">
+                <div class="section-center-header">
+                    <span class="section-badge-light">Agendamentos</span>
+                    <h2 class="serif-title font-white">Agendar por E-mail</h2>
+                    <p class="contact-desc">Preencha os campos abaixo e nossa equipe retornará rapidamente com as datas disponíveis.</p>
+                </div>
+                
+                <form class="premium-form" id="my-form">
+                    <div class="form-row-two">
+                        <div class="form-input-group">
+                            <label>Nome Completo</label>
+                            <input type="text" name="nome" id="form-nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-input-group">
+                            <label>Telefone de Contato</label>
+                            <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label>Motivo do Contato / Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Descreva brevemente sua necessidade..." rows="4" maxlength="4000" required></textarea>
+                        <div class="textarea-footer">
+                            <span id="char-count">Restam 4000 caracteres</span>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="Novo Contato Paciente: BuenoMD">
+                    
+                    <button type="submit" id="submit-button" class="btn-submit-premium">
+                        <i data-lucide="send"></i> Enviar Mensagem
+                    </button>
+                    
+                    <p id="status-message" class="ajax-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="floating-contact-wrapper" id="floating-menu-container">
+        <div class="floating-options-card" id="floating-options">
+            <div class="options-header">
+                <h4>Agendar Consulta</h4>
+                <p>Escolha o canal de sua preferência:</p>
+            </div>
+            <div class="options-list">
+                <a href="https://wa.me/5547999999999?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Mateus+Bueno+em+Brusque." target="_blank" class="option-item client-whatsapp">
+                    <div class="option-icon"><i data-lucide="message-square"></i></div>
+                    <div class="option-info">
+                        <span class="option-title">WhatsApp Brusque</span>
+                        <span class="option-sub">Atendimento rápido</span>
+                    </div>
+                </a>
+                <a href="https://wa.me/5547888888888?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+com+o+Dr.+Mateus+Bueno+em+Blumenau." target="_blank" class="option-item client-whatsapp">
+                    <div class="option-icon"><i data-lucide="message-square"></i></div>
+                    <div class="option-info">
+                        <span class="option-title">WhatsApp Blumenau</span>
+                        <span class="option-sub">Hospital Santa Isabel</span>
+                    </div>
+                </a>
+                <button type="button" class="option-item client-email" id="trigger-email-scroll">
+                    <div class="option-icon"><i data-lucide="mail"></i></div>
+                    <div class="option-info">
+                        <span class="option-title">Enviar E-mail</span>
+                        <span class="option-sub">Formulário do site</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <button class="btn-floating-trigger" id="floating-main-btn" aria-label="Abrir opções de contato">
+            <span class="pulse-ring"></span>
+            <i data-lucide="message-circle" class="icon-open"></i>
+            <i data-lucide="x" class="icon-close" style="display: none;"></i>
+        </button>
     </div>
 
-    <button id="btnContatoFlutuante">
-        Contato
-    </button>
+    <footer class="premium-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-info-brand">
+                <div class="logo-footer">
+                    <span class="brand-main">Bueno<span class="brand-sub">MD</span></span>
+                </div>
+                <p class="footer-tagline">Cirurgia Cardiovascular de Alta Performance, Segura e Humanizada.</p>
+                <div class="footer-badges">
+                    <span>CRM/SC 17737</span>
+                    <span>RQE 17251</span>
+                </div>
+                <p class="footer-email-direct"><i data-lucide="mail"></i> contato@buenome.com</p>
+            </div>
+            
+            <div class="footer-links-col">
+                <h5>Locais de Atendimento</h5>
+                
+                <div class="address-box">
+                    <span class="address-city-badge">Unidade Brusque</span>
+                    <p><i data-lucide="map-pin"></i> Av. Otto Renaux, 445<br>São Luiz, Brusque - SC<br>CEP: 88351-301</p>
+                </div>
+                
+                <div class="address-box">
+                    <span class="address-city-badge">Unidade Blumenau</span>
+                    <p><i data-lucide="building"></i> Hospital Santa Isabel<br>Rua Floriano Peixoto, 300<br>Centro, Blumenau - SC</p>
+                </div>
+            </div>
+            
+            <div class="footer-map-col">
+                <h5>Localização</h5>
+                <div class="footer-map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!1s0x94df47715f33a887%3A0x600b37e89dbd1fbc!2sAv.+Otto+Renaux%2C+445+-+S%C3%A3o+Luiz%2C+Brusque+-+SC%2C+88351-301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df47715f33a887%3A0x600b37e89dbd1fbc!2sAv.%20Otto%20Renaux%2C%20445%20-%20S%C3%A3o%20Luiz%2C%20Brusque%20-%20SC%2C%2088351-301!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="220" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="container footer-bottom-bar">
+            <p class="copyright">&copy; 2026 BuenoMD. Todos os direitos reservados.</p>
+            <p class="developer">Desenvolvido com foco em performance médica.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
